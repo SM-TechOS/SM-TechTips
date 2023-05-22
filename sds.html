@@ -1,0 +1,53 @@
+<input type="text" id="searchInput">
+<button onclick="performSearch()">Search</button>
+<div id="searchResults"></div>
+<script type="text/javascript">
+// Sample index of pages
+var pagesIndex = [
+  {
+    title: "Page 1",
+    description: "This is the first page",
+    keywords: "page 1"
+  },
+  {
+    title: "Page 2",
+    description: "This is the second page",
+    keywords: "page 2"
+  },
+  // Add more pages to the index
+];
+
+function performSearch() {
+  var searchInput = document.getElementById("searchInput").value.toLowerCase();
+  var searchResults = [];
+
+  // Perform the search
+  for (var i = 0; i < pagesIndex.length; i++) {
+    var page = pagesIndex[i];
+    if (
+      page.title.toLowerCase().includes(searchInput) ||
+      page.description.toLowerCase().includes(searchInput) ||
+      page.keywords.toLowerCase().includes(searchInput)
+    ) {
+      searchResults.push(page);
+    }
+  }
+
+  // Display the search results
+  var resultsContainer = document.getElementById("searchResults");
+  resultsContainer.innerHTML = "";
+
+  if (searchResults.length > 0) {
+    for (var j = 0; j < searchResults.length; j++) {
+      var page = searchResults[j];
+      var link = document.createElement("a");
+      link.href = page.url; // Replace with the actual URL of the page
+      link.textContent = page.title;
+      resultsContainer.appendChild(link);
+    }
+  } else {
+    resultsContainer.textContent = "No results found.";
+  }
+}
+
+</script>

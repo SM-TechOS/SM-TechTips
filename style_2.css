@@ -1,0 +1,398 @@
+
+html {
+}
+body {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  background: #070707;
+  color: #f1f1f1;
+  display: flex;
+  font-family: verdana;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+.main {
+  padding: 0 0 ;
+  width: 100%;
+  align-items:center;
+  overflow: hidden;
+}
+.main ::Selection {
+  background-color: rgba(0, 71, 129, 0.3);
+}
+.main .header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.main .tab {
+  position: sticky;
+  display: flex;
+  padding: 0 0;
+  overflow: hidden;
+  top: 12px;
+  right: 10px;
+  z-index: 99;
+}
+.main .tab .search input[type=text] {
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px 20px;
+  height: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #070707;
+  color: #a9e4fa;
+  opacity: 50%;
+
+}
+.main .tab .search input[type=text]:focus {
+  outline: none;
+  border: none;
+}
+.main .tab .options {
+  list-style-type: none;
+  margin: 0;
+  padding: 3px;
+  overflow: hidden;
+}
+
+.main .tab .options li {
+  float: left;
+}
+
+.main .tab .options li a {
+  display: block;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #797979;
+  transition: 0.25s;
+  cursor: pointer;
+  transition-timing-function: ease-in-out;
+}
+.main .tab .options li a:hover {
+  color: #ababab;
+}
+
+.main .tab .options li .icon {
+  padding: 14px 16px;
+  border-radius: 14px;
+  color: #ababab;
+  /*width: 16px;*/
+}
+.main .tab .options li .icon:hover {
+  color: #ababab;
+}
+.main .header {
+  background-color: #171717/*rgba(0, 71, 129,0.4)*/;
+}
+.progress-bar {
+  height: 5px;
+  background:  #0b82d7;
+  width: 0%;
+  z-index: 92;
+}
+.main .top {
+  width: 100%;
+  display: flex;
+  padding: 0 0;
+  overflow: hidden;
+  top: 5px;
+  left: 00px;
+  position: fixed;
+  -webkit-user-select: none;
+  background-color: #171717;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  align-items: center;
+  box-shadow: 1px 4px 1px 1px rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.main .content {
+  padding: 15px;
+}
+.main .content .tips {
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 20px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow:0px 4px 5px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  transition: 0.3s ease;
+}
+.main .content .tips:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.main .content .tips h2 {
+  color: #a5a5a5;
+}
+.main .content .tips p {
+  color: #7d7d7d;
+  text-align: left;
+}
+.main .content .tips div {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  padding-right: 10px;
+}
+.main .top .logo{
+  position: absolute;
+  right: 10px;
+  padding: 10px;
+}
+.main .top .logo span {
+  text-align: center;
+  font-size: 20px;
+  background: linear-gradient(to left,#ff7a00,#ff4e4e,#ff4e4e,#ff0000,#00bfff,#006eff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.main .content {
+  scroll-behavior: smooth;
+  margin: 60px auto 0 auto;
+  width: 95%;
+
+}
+.main .content .features {
+  
+}
+
+.main .content .features .home_content {
+  margin-top: 0px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+.main .content .features .home_content div {
+  
+  height: 100%;
+  text-align: center;
+   width: 50%;
+}
+
+.main .content .features .home_content img {
+  width: 50%;
+}
+button {
+    margin-top: 20px;
+   border: 5px solid #0b82d7;
+   outline: 0;
+   padding: 10px;
+   width: 30%;
+   background-color: #070707;
+   color: #0b82d7;
+   font-family: verdana;
+   font-size: 25px;
+   border-radius: 10px;
+   cursor: pointer;
+
+
+} 
+.main .content .tips div button {
+  width: 40%;
+}
+button:hover {
+  color: #3da2ea;
+  border: 5px solid #3da2ea;
+}
+
+.main .top .tab .options li .active {
+  color: #0b82d7;
+}
+.main .scroll_top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+}
+.main .scroll_top a {
+  padding: 10px;
+  background-color: #0b82d7;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: ease-in 0.2s;
+}
+.main .scroll_top a:hover {
+  background-color:#32a2fc;
+}
+.main .scroll_top a:active {
+  background-color:#003c8b;
+
+}
+.main .top .tab .search .filterMenu {
+  display: none;
+  overflow: auto;
+  position: fixed;
+  width: 450px;
+  height: 500px;
+  top: 63px;
+  left: 275px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #171717;
+  box-shadow:0px 4px 5px rgba(0, 0, 0, 0.75);
+  border-left: 2px solid rgba(255,255,255,0.05);
+  border-bottom: 2px solid rgba(255,255,255,0.05);
+}
+.main .top .tab .search .filterMenu .filterMenuItems {
+  display: flex;
+  flex-direction: column;
+}
+
+.main .top .tab .menu {
+  display: none;
+  position: fixed;
+  width: 250px;
+  height: 500px;
+  top: 63px;
+  left: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #171717;
+  box-shadow:0px 4px 5px rgba(0, 0, 0, 0.75);
+  border-left: 2px solid rgba(255,255,255,0.05);
+  border-bottom: 2px solid rgba(255,255,255,0.05);
+}
+.main .top .tab .menu .tab_items {
+  display: none;
+}
+.main .top .tab .menu .menu_items {
+  display: flex;
+  flex-direction: column;
+}
+.main .top .tab .menu .menu_items_2 {
+  display: flex;
+  flex-direction: column;
+}
+.main .top .tab .menu .menu_items_2 .active {
+  color: #0b82d7;
+}
+.main .top .tab .menu .menu_items_2 .active:hover {
+  color: #0b82d7;
+  translate: 0;
+}
+
+
+.main .footer {
+  margin: 0;
+  position: fixed;
+  background-color: #024C81;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  bottom: 0;
+}
+.main .footer .d1 {
+  padding: 20px 20px;
+  font-size: 18px;
+}
+.main .footer .d2 {
+  padding: 20px 20px;
+}
+.main .top .tab .menu .tab_items {
+  width: 100%;
+  justify-content: center;
+  color: #ababab;
+  font-size: 15px;
+}
+.main .top .tab .menu .menu_items {
+  width: 100%;
+  justify-content: center;
+  color: #ababab;
+  font-size: 15px;
+}
+.main .top .tab .search .filterMenu .filterMenuItems {
+  width: 100%;
+  justify-content: center;
+  color: #ababab;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.main .top .tab .menu .menu_items_2 {
+  width: 100%;
+  justify-content: center;
+  color: #ababab;
+  font-size: 15px;
+}
+.main .top .tab .search .filterMenu .filterMenuItems a {
+ padding: 10px 20px;
+  cursor: pointer;
+  border-right: 0px solid #ff0000;
+  transition-property: border-right;
+  transition: 0.3s;
+  translate: 0px;
+}
+.main .top .tab .menu a {
+ padding: 10px 20px;
+  cursor: pointer;
+  border-right: 0px solid #ff0000;
+  transition-property: border-right;
+  transition: 0.3s;
+  translate: 0px;
+  }
+
+
+.main .top .tab .menu .tab_items .active {
+ color: #0b82d7;
+}
+
+.main .top .tab .menu a:nth-child(1) {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.main .top .tab .search .filterMenu .filterMenuItems a:hover {
+  /*background: rgb(33, 132, 245);*/
+  background-color: #004c83;
+}
+.main .top .tab .menu  a:hover {
+ /* background-color: #232323;*/
+  translate: 10px;
+  color: #f5f5f5;
+}
+code {
+    background: #666;
+    padding: 3px 5px;
+    color: #f2f2f2;
+}
+
+@media screen and (max-width: 1000px) {
+  .main .content .features .home_content{display: block;height: 100%;margin-bottom: 150px}
+  .main .content .features .home_content div{width: 100%; }
+  .main .content .features .home_content img{width: 100%}
+  .main .content .features .techtips{display: block;height: 100%}
+  .main .content .features .techtips div{width: 100%;margin-bottom: 150px}
+  .main .content .features .techtips img{width: 100%}
+  button{width: 80%}
+  .main .content .tips div button {width: 100%;}
+}
+
+@media screen and (max-width: 600px) {
+  .main .top {border-radius: 0;}
+  .main .top .tab .options li .icon span {display: none;}
+  .main .top .tab .options li .icon {width: 16px;}
+  .main .top .tab .options li:nth-child(2) {display: none;}
+  .main .top .tab .options li:nth-child(3) {display: none;}
+  .main .top .tab .options li:nth-child(4) {display: none;}
+  .main .footer {flex-direction: column;}
+  .main .top .tab .menu .tab_items {display: flex;flex-direction: column;}
+  .main .tab .search input[type=text]{width: 30%}
+
+}
+@media screen and (max-width: 755px) {
+  .main .top .tab .search .filterMenu {width: 100%;left: 0}
+  .main .content .tips div {display: flex;flex-direction: column;}
+}
