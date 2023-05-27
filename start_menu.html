@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SM TechTips: Windows Start Menu</title>
+	<link rel="stylesheet" type="text/css" href="style_2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="images/techtips.png">
+	<script src="script.js"></script>
+</head>
+<body onload="appendQuestions()">
+	<div class="main">
+		<div class="top" id="top__">
+			<div class="tab" id="tab__">
+				<ul class="options">
+					<li><a class="icon" id="menu_btn"><i class="fa fa-bars"></i> <span>Menu</span></a></li>
+					<li><a onclick="home()">Home</a></li>
+					<li><a onclick="contact()">Contact</a></li>
+				</ul>
+				<div class="search">
+					<input id="ptwesv" type="text" placeholder="Search tips..." onkeyup="filterFunction()">
+					<div id="ptwest" class="filterMenu">
+						<div class="filterMenuItems" id="filterMenuItems">
+							<a onclick="android()">Tips for Android</a>
+							<a onclick="windows()">Tips for Windows</a>
+							<a onclick="desktop()">Tips and tricks for Windows Desktop</a>
+							<a onclick="start_menu()">Tips and tricks for Windows Start Menu</a>
+							<a onclick="god_mode()">How can we bring all the settings and options in one place in Windows?</a>
+							<a onclick="god_mode()">What is the text to enable god_mode?</a>
+							<a onclick="virtual_win()">How to customize virtual desktops?</a>
+							<a onclick="virtual_win()">How to customize virtual desktops?</a>
+							<a onclick="virtual_win()">How to switch between virtual desktops?</a>
+							<a onclick="snapping_win()">How can we split the desktop in two windows?</a>
+							<a onclick="snapping_win()">How can we use two windows in a desktop?</a>
+							<a onclick="snapping_win()">How can we snap windows in a desktop?</a>
+							<a onclick="snapping_win()">How can we snap windows between monitors?</a>
+							<a onclick="customize_tb()">How to customize taskbar without opening setting app?</a>
+							<a onclick="customize_tb()">How to customize taskbar in the desktop?</a>
+							
+						</div>
+					</div>
+				</div>
+				<div class="menu" id="tab_menu" style="display: none;">
+					<br>
+					<div class="tab_items">
+						<a onclick="home()" class="active"><i style="font-size: 20px;" class="fa fa-home" aria-hidden="true"></i> Home</a>
+						<a onclick="contact()"><i style="font-size: 15px;" class="fa fa-envelope" aria-hidden="true"></i> Contact</a><br>
+					</div>
+					<div class="menu_items_2">
+						<a onclick="android()"><img width="25px" height="25px" src="images/android.png"></img> Android</a>
+						<a onclick="windows()" class="active"><img width="24px" height="24px" src="images/windows.png"></img> Windows</a>
+					</div>
+					<br>
+					<div class="menu_items"> 
+						<a onclick="window.open('https://sm-techos.github.io/SM-Home/')"><img width="25px" height="25px" src="images/SM_logo.png"></img> SM Technology</a>
+						<a onclick="window.open('https://sm-techos.github.io/fe-docs/')"><img width="25px" height="25px" src="images/txteditor.png"></img> Fast Edit 2</a>
+					</div>
+				</div>
+			</div>
+			<div class="header">
+				<div class="progress-bar" id="myBar"></div>
+			</div>
+			<div class="logo"><span><b style="display: inline;">SM</b> TechTips</span></div>
+		</div>
+		<div class="scroll_top"><a onclick="scrollToTop()"><i class="fa fa-arrow-up"></i></a></div>
+		<div class="content" onclick="">
+<h1 id="win">Tips and tricks for Windows Start Menu</h1><hr>
+<p> Here are some useful tips and tricks for Windows desktop:</p><br>
+	
+<h2 id="virtual_desktop">1. Virtual Desktop</h2>
+<div style="color:#7d7d7d">
+	<p>
+<h3>Virtual desktops in Windows provide a way to organize and manage your open windows and applications. Here are some tips and tricks to make the most out of virtual desktops:</h3>
+<br>
+1.<b>Creating Virtual Desktops:</b> Press Win + Tab to open the Task View, and then click on the "New Desktop" button in the bottom right corner. Alternatively, you can use the keyboard shortcut Win + Ctrl + D to create a new virtual desktop directly.
+<br><br>
+2.<b>Switching Between Virtual Desktops:</b> To switch between virtual desktops, use the keyboard shortcut Win + Ctrl + Left/Right Arrow. You can also use the Task View (Win + Tab) to select the desired desktop.
+<br><br>
+3.<b>Moving Windows between Virtual Desktops:</b> You can move windows between virtual desktops easily. Open Task View (Win + Tab), then drag and drop the window you want to move onto the desired virtual desktop.
+<br><br>
+4.<b>Customizing Virtual Desktops:</b> Right-click on the Taskbar and go to "Taskbar settings." Scroll down to the "Multiple displays" section and enable the option "Show taskbar on all displays" to have the taskbar appear on all virtual desktops. You can also rename virtual desktops by clicking on their thumbnails in Task View.
+<br><br>
+5.<b>Keyboard Shortcuts:</b> In addition to the shortcuts mentioned above, you can use Win + Ctrl + F4 to close the current virtual desktop. Pressing Win + Ctrl + F will open the Task View on the current desktop.
+<br><br>
+6.<b>Taskbar Preview:</b> Hovering over the Taskbar icon of an application that is open on another virtual desktop will show a preview of that desktop, allowing you to quickly switch to it.
+<br><br>
+7.<b>Keyboard Shortcut Navigation:</b> Once in the Task View, you can navigate through virtual desktops using the arrow keys and press Enter to select a desktop.
+<br><br>
+8.<b>Pinning Applications:</b> If there are specific applications you want to have on all virtual desktops, right-click on their Taskbar icon and select "Show this window on all desktops."
+<br><br>
+Using virtual desktops can help you organize your workflow, keep related tasks grouped together, and reduce clutter on a single desktop. Experiment with these features and find the setup that works best for your productivity needs.
+<br><br><br>
+	</p><img style="width: 100%;" src="images/virtual_desk.png"><br><br><br>
+</div>
+<h2 id="snapping_win">2. Snapping windows</h2>
+<div style="color:#7d7d7d">
+	<h3>Snapping windows is a convenient feature in Windows that allows you to quickly position and resize windows on your desktop. Here's a quick summary of how to snap windows:</h3>
+	<ol>
+		<li><b>Snap to the Left or Right:</b> Drag a window to the left or right edge of the screen until it snaps into place. This automatically resizes the window to take up half of the screen.</li><br>
+		<li><b>Snap to the Top:</b> If you want a window to occupy the entire screen, drag it to the top edge until it snaps into place. This maximizes the window.</li><br>
+		<li><b>Snap to Corners:</b> To position a window in one of the four corners of the screen, drag it to the respective corner until it snaps into place. This resizes the window to take up a quarter of the screen.</li><br>
+		<li><b>Snap between Monitors:</b> If you have multiple monitors, you can also snap windows between them. Drag a window to the edge of one monitor and continue dragging to the next monitor to snap the window across both screens.</li>
+	</ol>
+	<p>These snapping techniques are great for multitasking and organizing your workspace. They allow you to easily work with multiple windows side by side, maximize your screen real estate, and improve productivity.</p><br><br><br>
+<img style="width: 100%;" src="images/snapping_win.jpg"><br><br><br>
+</div>
+<h2 id="customize_tb">3. Customize Taskar</h2>
+<div style="color:#7d7d7d">
+	<h3>You can easily customize your taskbar through desktop.</h3>
+	<ol>
+		<li><b>Taskbar Customization:</b> Right-click on the taskbar to access various customization options. You can lock/unlock the taskbar, hide it in desktop mode, show/hide specific icons, and more.</li><br>
+	</ol><br><br><br>
+<img style="width: 100%;" src="images/customize_tb.jpg"><br><br><br><br>
+</div><br><br><br>
+<h2 id="god_mode">4. All settings and options of Windows at one place. How?</h2>
+<div style="color:#7d7d7d">
+	<h3>
+"God Mode" is a hidden feature in Windows that provides access to a comprehensive list of all available settings and options in one place. Enabling God Mode creates a folder that contains shortcuts to various configuration options, making it convenient to customize and manage your system. Here's how to enable God Mode:
+	</h3>
+	<ol>
+		<li>Create a new folder on your desktop or any desired location.</li><br>
+		<li>Right-click on the newly created folder and select "Rename".</li><br>
+		<li>Copy and paste the following text as the folder name:<br><code>GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}
+		</code></li>
+		<li>Press Enter to save the folder name. The folder icon will change to a control panel icon.</li>
+	</ol>
+	<p>After enabling God Mode, you can open the folder to access a comprehensive list of settings grouped into different categories. These settings cover various aspects of your system, including system, display, network, security, and more. You can browse through the options, customize settings, and access features that may not be readily available in the standard Windows settings.<br><br>
+
+<b>Note:</b> The term "God Mode" is just a colloquial name given to this feature, and it does not grant any special privileges or control over your system. It's simply a convenient way to access and manage Windows settings in one place.</p>
+	<br><br><br>
+</div><br><br><br>
+
+
+		</div>
+		<div class="footer">
+			<div class="d1">© 2023 SM Technology | Designed and Maintained by Shaurya Mishra.</div>
+			<div class="d2">
+				<div></div>
+			</div>
+			
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
