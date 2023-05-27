@@ -102,7 +102,10 @@ $(document).ready(function(){
   });
 });
 
-function filterFunction() {
+function filterFunction(){
+  advanceFilterFunction()
+}
+function oldfilterFunction() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("ptwesv");
   filter = input.value.toUpperCase();
@@ -117,28 +120,78 @@ function filterFunction() {
     }
   }
 }
+function advanceFilterFunction(){
+  div = document.getElementById("filterMenuItems");
+  const items = div.getElementsByTagName("a");
+  const searchInput = document.getElementById('ptwesv');
+  const searchValue = searchInput.value.toLowerCase().trim();
+  const keywords = searchValue.split(' ');
+  Array.from(items).forEach(item => {
+    const text = item.textContent.toLowerCase();
+    let hasMatch = true;
 
-var q1 = document.getElementById('q1');
-var q2 = document.getElementById('q2');
-var q3 = document.getElementById('q3');
-var q4 = document.getElementById('q4');
-var q5 = document.getElementById('q5');
+    // Check if all keywords match the item text
+    keywords.forEach(keyword => {
+      if (!text.includes(keyword)) {
+        hasMatch = false;
+      }
+      });
 
-// Add click event to each link
-q1.addEventListener('click', handleLinkClick);
-q2.addEventListener('click', handleLinkClick);
-q3.addEventListener('click', handleLinkClick);
-q4.addEventListener('click', handleLinkClick);
-q5.addEventListener('click', handleLinkClick);
+      if (hasMatch) {
+      item.style.display = 'block';
+      } else {
+      item.style.display = 'none';
+      }
+  });
+}
 
-// Handle link click events
-function handleLinkClick(event) {
-  event.preventDefault(); // Prevent the default link behavior
 
-  var linkId = this.id; // Get the ID of the clicked link
-  var pageUrl = linkId + '.html'; // Generate the URL based on the ID
+
+
+
+function copyText(element) {
+      // Create a temporary input element
+var tempInput = document.createElement("input");
+tempInput.value = element.innerText;
+document.body.appendChild(tempInput);
+
+      // Copy the text from the input element
+tempInput.select();
+document.execCommand("copy");
+
+      // Remove the temporary input element
+document.body.removeChild(tempInput);
+
+      // Alert or provide feedback to the user
+var alertText = tempInput.value + ' - Text copied';
+alert(alertText);
+}
+
+
+function appendQuestions(){
+  let container = document.getElementById('filterMenuItems');
+  let q_list = {
+    q1: 'How to enable OTG connection in my android?',
+    q2: 'How to clear temporary files in windows?',
+    q3: 'How to enable thumbnails in File Explorer?',
+    q4: 'Is my Window 10 compatible to be upgraded to Windows 11?',
+    q5: 'Know why to upgrade to Windows 11?'
+  };
+  for (let q in q_list){
+    let opt = document.createElement("a");
+    opt.id = q;
+    opt.innerText = q_list[q];
+    container.appendChild(opt);
+    opt.addEventListener('click', handleLinkClick);
+  };
+  function handleLinkClick(event) {
+    event.preventDefault(); // Prevent the default link behavior
+
+    var linkId = this.id; // Get the ID of the clicked link
+    var pageUrl = linkId + '.html'; // Generate the URL based on the ID
 
   // Open the page in a new window or tab
-  window.open(pageUrl);
-}
+    window.open(pageUrl);
+  };
+};
 
