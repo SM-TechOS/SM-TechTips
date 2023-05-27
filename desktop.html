@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" href="images/techtips.png">
 	<script src="script.js"></script>
 </head>
-<body>
+<body onload="appendQuestions()">
 	<div class="main">
 		<div class="top" id="top__">
 			<div class="tab" id="tab__">
@@ -39,11 +39,6 @@
 							<a onclick="snapping_win()">How can we snap windows between monitors?</a>
 							<a onclick="customize_tb()">How to customize taskbar without opening setting app?</a>
 							<a onclick="customize_tb()">How to customize taskbar in the desktop?</a>
-							<a id="q1">How to enable OTG connection in my android?</a>
-							<a id="q2">How to clear temporary files in windows?</a>
-							<a id="q3">How to enable thumbnails in File Explorer?</a>
-							<a id="q4">Is my Window 10 compatible to be upgraded to Windows 11?</a>
-							<a id="q4">Know why to uprade to Windows 11?</a>
 						</div>
 					</div>
 				</div>
@@ -59,7 +54,7 @@
 					</div>
 					<br>
 					<div class="menu_items"> 
-						<a onclick="window.open('https://sm-techos.github.io/SM-Home/')"><img width="25px" height="25px" src="images/techtips.png"></img> SM Technology</a>
+						<a onclick="window.open('https://sm-techos.github.io/SM-Home/')"><img width="25px" height="25px" src="images/SM_logo.png"></img> SM Technology</a>
 						<a onclick="window.open('https://sm-techos.github.io/fe-docs/')"><img width="25px" height="25px" src="images/txteditor.png"></img> Fast Edit 2</a>
 					</div>
 				</div>
@@ -79,15 +74,15 @@
 	<p>
 <h3>Virtual desktops in Windows provide a way to organize and manage your open windows and applications. Here are some tips and tricks to make the most out of virtual desktops:</h3>
 <br>
-1.<b>Creating Virtual Desktops:</b> Press Win + Tab to open the Task View, and then click on the "New Desktop" button in the bottom right corner. Alternatively, you can use the keyboard shortcut Win + Ctrl + D to create a new virtual desktop directly.
+1.<b>Creating Virtual Desktops:</b> Press <shortcut>Win + Tab</shortcut> to open the Task View, and then click on the "New Desktop" button in the bottom right corner. Alternatively, you can use the keyboard shortcut <shortcut>Win + Ctrl + D</shortcut> to create a new virtual desktop directly.
 <br><br>
-2.<b>Switching Between Virtual Desktops:</b> To switch between virtual desktops, use the keyboard shortcut Win + Ctrl + Left/Right Arrow. You can also use the Task View (Win + Tab) to select the desired desktop.
+2.<b>Switching Between Virtual Desktops:</b> To switch between virtual desktops, use the keyboard shortcut <shortcut>Win + Ctrl + Left/Right Arrow</shortcut>. You can also use the Task View (<shortcut>Win + Tab</shortcut>) to select the desired desktop.
 <br><br>
-3.<b>Moving Windows between Virtual Desktops:</b> You can move windows between virtual desktops easily. Open Task View (Win + Tab), then drag and drop the window you want to move onto the desired virtual desktop.
+3.<b>Moving Windows between Virtual Desktops:</b> You can move windows between virtual desktops easily. Open Task View (<shortcut>Win + Tab</shortcut>), then drag and drop the window you want to move onto the desired virtual desktop.
 <br><br>
 4.<b>Customizing Virtual Desktops:</b> Right-click on the Taskbar and go to "Taskbar settings." Scroll down to the "Multiple displays" section and enable the option "Show taskbar on all displays" to have the taskbar appear on all virtual desktops. You can also rename virtual desktops by clicking on their thumbnails in Task View.
 <br><br>
-5.<b>Keyboard Shortcuts:</b> In addition to the shortcuts mentioned above, you can use Win + Ctrl + F4 to close the current virtual desktop. Pressing Win + Ctrl + F will open the Task View on the current desktop.
+5.<b>Keyboard Shortcuts:</b> In addition to the shortcuts mentioned above, you can use <shortcut>Win + Ctrl + F4</shortcut> to close the current virtual desktop. Pressing <shortcut>Win + Ctrl + F</shortcut> will open the Task View on the current desktop.
 <br><br>
 6.<b>Taskbar Preview:</b> Hovering over the Taskbar icon of an application that is open on another virtual desktop will show a preview of that desktop, allowing you to quickly switch to it.
 <br><br>
@@ -119,7 +114,7 @@ Using virtual desktops can help you organize your workflow, keep related tasks g
 	</ol><br><br><br>
 <img style="width: 100%;" src="images/customize_tb.jpg"><br><br><br><br>
 </div><br><br><br>
-<h2 id="god_mode">4. All settings and options of Windows at one place. How?</h2>
+<h2 id="god_mode">4. All settings and options of Windows in one place. How?</h2>
 <div style="color:#7d7d7d">
 	<h3>
 "God Mode" is a hidden feature in Windows that provides access to a comprehensive list of all available settings and options in one place. Enabling God Mode creates a folder that contains shortcuts to various configuration options, making it convenient to customize and manage your system. Here's how to enable God Mode:
@@ -127,7 +122,7 @@ Using virtual desktops can help you organize your workflow, keep related tasks g
 	<ol>
 		<li>Create a new folder on your desktop or any desired location.</li><br>
 		<li>Right-click on the newly created folder and select "Rename".</li><br>
-		<li>Copy and paste the following text as the folder name:<br><code>GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}
+		<li>Copy and paste the following text as the folder name:<br><code onclick="copyText(this)">GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}<span class="tooltiptext">Click to copy text</span>
 		</code></li>
 		<li>Press Enter to save the folder name. The folder icon will change to a control panel icon.</li>
 	</ol>
@@ -135,8 +130,14 @@ Using virtual desktops can help you organize your workflow, keep related tasks g
 
 <b>Note:</b> The term "God Mode" is just a colloquial name given to this feature, and it does not grant any special privileges or control over your system. It's simply a convenient way to access and manage Windows settings in one place.</p>
 	<br><br><br>
-</div><br><br><br>
-
+</div>
+<h2 id="bing_wp">5. Bored by your old wallpaper? Try Bing Wallpaper</h2>
+<div style="color:#7d7d7d">
+	<h3>Microsoft's Bing Wallpaper provides wonderful wallpapers which are changed exery day. So, new wallpaper every day will not make you bored.</h3>
+	<ol>
+		<li>Download Bing Wallpaper by <a href="https://www.microsoft.com/en-in/bing/bing-wallpaper-msn?" target="__blank">clicking here.</a></li>
+	</ol><br><br><br>
+</div><br><br><br><br><br><br>
 
 		</div>
 		<div class="footer">
